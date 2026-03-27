@@ -47,6 +47,17 @@ ID,Fecha,Mes,Año,Propiedad,Tipo,Zona,Link_Maps,Asesora,Estatus,Motivo_Cancel,Fo
 2603050919.0,2026-03-05,Marzo,2026,Coto Extremadura 39,Casa,Puerta de Hierro,,Alice,Cancelada,,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
 2603050920.0,2026-03-05,Marzo,2026,Lote 2 ,Terreno,"Lago Nogal, Santa Anita.",,Clau M.,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
 2603050926.0,2026-03-02,Marzo,2026,Casa Cajititlan,Casa,Cajititlan,,Gaby,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2603130913.0,2026-03-06,Marzo,2026,Callejón del mirador 4168,Casa,Universidad,,Lore,Realizada,,True,True,False,Entregado,Pendiente,,False,False,False,,Buena
-2603130914.0,2026-03-06,Marzo,2026,"La, Carr. la Venta-Nextipac, 45220 Zapopan, Jal.",Terreno,Nextipac,,Gaby,Realizada,,True,True,True,Entregado,Pendiente,,False,False,False,,Buena
-2603130923.0,2026-03-13,Marzo,2026,Torre Agave,Depa,Torre Agave,,Yadi,Realizada,,True,True,False,Entregado,Pendiente,,False,False,False,,Buena
+2603130913.0,2026-03-06,Marzo,2026,Callejón del mirador 4168,Casa,Universidad,,Lore,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2603130914.0,2026-03-06,Marzo,2026,"La, Carr. la Venta-Nextipac, 45220 Zapopan, Jal.",Terreno,Nextipac,,Gaby,Realizada,,True,True,True,Entregado,Montado,,False,False,False,,Buena
+2603130923.0,2026-03-13,Marzo,2026,Torre Agave,Depa,Torre Agave,,Yadi,Realizada,,True,True,False,Entregado,Montado,,False,False,False,,Buena
+2603231114.0,2026-03-13,Marzo,2026,Coto Universidad,Casa,Coto Universidad,,Lore,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2603231116.0,2026-03-17,Marzo,2026,Fracc. Valle de Santa María,Terreno," San Pedro Tlaquepaque, Jal.",,Gaby,Realizada,,True,True,True,Entregado,Montado,,False,False,False,,Buena
+2603231117.0,2026-03-16,Marzo,2026,Lomas de Polanco ,Casa,Lomas de Polanco ,,Adri,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2603231118.0,2026-03-17,Marzo,2026,Callejón del mirador 4168,Casa,Callejón del mirador 4168,,Lore,Realizada,,True,True,True,Entregado,Montado,,False,False,False,,Buena
+2603231118.0,2026-03-20,Marzo,2026,Bodega ,Local,Isla Raza,,Jaime,Realizada,,True,True,True,Entregado,Montado,,False,False,False,,Buena
+2603231121.0,2026-03-19,Marzo,2026,Vitia La Toscana,Depa,Vitia La Toscana,,Ana,Realizada,,True,True,False,Entregado,Montado,,False,False,False,,Buena
+2603271135.0,2026-03-19,Marzo,2026,Desarrollo Arysta,Depa,Desarrollo Arysta,,Ale Rosales,Realizada,,True,True,True,Entregado,Montado,,False,False,False,,Buena
+2603271136.0,2026-03-27,Marzo,2026,Bosquetto,Casa,Bosquetto,,Sara Rojas,Cancelada,,False,True,False,No Aplica,No Aplica,,False,False,False,,Buena
+2603271137.0,2026-03-25,Marzo,2026,Casa / Depas ciudad del sol ,Casa,ciudad del sol ,,Lidia,Realizada,,True,True,True,Entregado,Pendiente,,False,False,False,,Buena
+2603271138.0,2026-03-26,Marzo,2026,Depa Forum,Depa,Forum,,Cata,Realizada,,True,True,True,Editando,Pendiente,,False,False,False,,Buena
+2603271138,2026-03-26,Marzo,2026,Depa Soneto,Depa,Providencia,,Cata,Realizada,,True,True,True,Editando,Pendiente,,False,False,False,,Buena
