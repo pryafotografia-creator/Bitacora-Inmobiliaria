@@ -1,16 +1,16 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px 
+import plotly.express as px
 import os
 import time
 from datetime import datetime, timedelta
 
 # --- CONFIGURACIÓN ---
-st.set_page_config(page_title="Bitácora Pro", layout="wide", page_icon="📷")
+st.set_page_config(page_title="Bitácora Prya", layout="wide", page_icon="📷")
 ARCHIVO_CSV = 'bitacora_datos.csv'
 
 # Lista oficial de columnas
-COLS_OFICIALES = [
+COLS = [
     "ID", "Fecha", "Mes", "Año", "Propiedad", "Tipo", "Zona", 
     "Link_Maps", "Asesora", "Estatus", "Motivo_Cancel",
     "Foto", "Video", "Drone", 
@@ -27,21 +27,24 @@ def get_mes(dt):
 
 def cargar_y_limpiar():
     if not os.path.exists(ARCHIVO_CSV):
-        df = pd.DataFrame(columns=COLS_OFICIALES)
+        df = pd.DataFrame(columns=COLS)
         df.to_csv(ARCHIVO_CSV, index=False)
         return df
     
+    # keep_default_na=False evita que "No Aplica" se lea como vacío
     df = pd.read_csv(ARCHIVO_CSV, keep_default_na=False, na_values=[''])
     
     # 1. Eliminar duplicados
     df = df.loc[:, ~df.columns.duplicated()]
 
-    # 2. Renombrar columnas viejas
+    # 2. Renombrar viejas columnas si existen
     renombres = {
-        "Nombre_Propiedad": "Propiedad", "Tipo_Propiedad": "Tipo",
-        "Ubicacion": "Zona", "Estatus_Sesion": "Estatus", 
+        "Nombre_Propiedad": "Propiedad", 
+        "Tipo_Propiedad": "Tipo", 
+        "Ubicacion": "Zona", 
         "Fecha_Entrega": "Entrega"
     }
+    
     for viejo, nuevo in renombres.items():
         if viejo in df.columns:
             if nuevo not in df.columns:
@@ -50,15 +53,20 @@ def cargar_y_limpiar():
                 df.drop(columns=[viejo], inplace=True)
 
     # 3. Completar faltantes
-    for c in COLS_OFICIALES:
-        if c not in df.columns:
+    for c in COLS:
+        if c not in df.columns: 
             df[c] = ""
 
-    # 4. Limpieza de tipos y MIGRACIÓN DE "N/A" a "No Aplica"
+    # --- PARCHE DE SEGURIDAD PARA LINKS Y TEXTOS ---
+    df['Link_Maps'] = df['Link_Maps'].fillna("").astype(str)
+    df['Link_Maps'] = df['Link_Maps'].replace(['nan', 'NaN'], '')
+
+    # 4. Limpieza de tipos booleanos
     bool_cols = ["Foto", "Video", "Drone", "TikTok", "YouTube", "Insta"]
     for c in bool_cols:
         df[c] = df[c].apply(lambda x: True if str(x).lower() in ['true', '1', 'si', 'sí'] else False)
 
+    # MIGRACIÓN DE "N/A" a "No Aplica"
     df.replace("N/A", "No Aplica", inplace=True)
 
     if df["Edicion_Foto"].dtype == object:
@@ -67,25 +75,26 @@ def cargar_y_limpiar():
     if df["Edicion_Video"].dtype == object:
         df["Edicion_Video"] = df["Edicion_Video"].replace("", "No Aplica")
     
-    return df[COLS_OFICIALES]
+    return df[COLS]
 
 def get_asesoras(df):
     if 'Asesora' in df.columns:
-        lista = [x for x in df['Asesora'].unique() if str(x).strip() != ""]
+        nombres_crudos = df['Asesora'].fillna("").astype(str).unique().tolist()
+        lista = [nombre.strip() for nombre in nombres_crudos if nombre.strip() != "" and nombre.strip().lower() != "nan"]
         lista.sort()
         return lista
     return []
 
-# --- INTERFAZ ---
+# --- INTERFAZ PRINCIPAL ---
 
 st.title("📷 Bitácora de Producción")
-menu = st.radio("Navegación:", ["Nueva Captura", "Editar Registros", "📊 Estadísticas Avanzadas"], horizontal=True)
+menu = st.radio("Navegación:", ["📝 Nueva Captura", "✏️ Editar Registros", "⚡ Pendientes", "📊 Estadísticas"], horizontal=True)
 st.markdown("---")
 
 # ---------------------------------------------------------
 # 1. NUEVA CAPTURA
 # ---------------------------------------------------------
-if menu == "Nueva Captura":
+if menu == "📝 Nueva Captura":
     df = cargar_y_limpiar()
     lista_ases = get_asesoras(df) + ["➕ Nueva..."]
 
@@ -101,10 +110,8 @@ if menu == "Nueva Captura":
 
     st.subheader("👤 2. Gestión")
     c_gest1, c_gest2 = st.columns(2)
-    
     sel_ase = c_gest1.selectbox("Asesora", lista_ases)
     asesora_final = c_gest1.text_input("Nombre Nueva Asesora:") if sel_ase == "➕ Nueva..." else sel_ase
-
     estatus = c_gest2.selectbox("Estatus", ["Realizada", "Cancelada", "Reprogramada"])
     motivo = c_gest2.text_input("Motivo Cancelación") if estatus == "Cancelada" else ""
 
@@ -116,7 +123,6 @@ if menu == "Nueva Captura":
     
     st.markdown("---")
     c_e1, c_e2 = st.columns(2)
-    
     idx_v = 3 if not s_video else 0
     opciones_foto = ["Pendiente", "Editando", "Entregado", "No Aplica"]
     opciones_video = ["Pendiente", "Montado", "Entregado", "No Aplica"]
@@ -133,8 +139,7 @@ if menu == "Nueva Captura":
             st.error("⚠️ Error: Falta Nombre de Propiedad o Asesora.")
         else:
             if estatus == "Cancelada":
-                e_foto = "No Aplica"
-                e_video = "No Aplica"
+                e_foto, e_video = "No Aplica", "No Aplica"
             else:
                 if not s_foto: e_foto = "No Aplica"
                 if not s_video: e_video = "No Aplica"
@@ -151,19 +156,17 @@ if menu == "Nueva Captura":
             }
             
             df_new = pd.DataFrame([nuevo])
-            df_clean = cargar_y_limpiar()
-            df_final = pd.concat([df_clean, df_new], ignore_index=True)
+            df_final = pd.concat([cargar_y_limpiar(), df_new], ignore_index=True)
             df_final.to_csv(ARCHIVO_CSV, index=False)
-            
             st.success(f"✅ Guardado correctamente.")
-            time.sleep(1.2)
+            time.sleep(1)
             st.rerun()
 
 # ---------------------------------------------------------
 # 2. EDITAR
 # ---------------------------------------------------------
-elif menu == "Editar Registros":
-    st.info("💡 Nota: Los cambios de estatus 'Cancelada' o checks de servicios actualizan 'No Aplica' al guardar.")
+elif menu == "✏️ Editar Registros":
+    st.info("💡 Edita directo en la tabla. Recuerda presionar 'Enter' tras un cambio antes de guardar.")
     df = cargar_y_limpiar()
     
     opciones_foto = ["Pendiente", "Editando", "Entregado", "No Aplica"]
@@ -175,16 +178,18 @@ elif menu == "Editar Registros":
             "Foto": st.column_config.CheckboxColumn(width="small"),
             "Video": st.column_config.CheckboxColumn(width="small"),
             "Drone": st.column_config.CheckboxColumn(width="small"),
-            "Link_Maps": st.column_config.LinkColumn("Mapa"),
-            "Edicion_Foto": st.column_config.SelectboxColumn(options=opciones_foto, required=True),
-            "Edicion_Video": st.column_config.SelectboxColumn(options=opciones_video, required=True),
-            "Estatus": st.column_config.SelectboxColumn(options=["Realizada", "Cancelada", "Reprogramada"], required=True),
+            # Cambiado a TextColumn para evitar errores de validación
+            "Link_Maps": st.column_config.TextColumn("Link Maps"),
+            "Edicion_Foto": st.column_config.SelectboxColumn(options=opciones_foto),
+            "Edicion_Video": st.column_config.SelectboxColumn(options=opciones_video),
+            "Estatus": st.column_config.SelectboxColumn(options=["Realizada", "Cancelada", "Reprogramada"]),
+            "ID": st.column_config.TextColumn(disabled=True)
         }
     )
 
     if st.button("💾 ACTUALIZAR BASE DE DATOS", type="primary"):
-        edited.loc[edited['Video'] == False, 'Edicion_Video'] = 'No Aplica'
-        edited.loc[edited['Foto'] == False, 'Edicion_Foto'] = 'No Aplica'
+        edited.loc[(edited['Video'] == False) & (~edited['Edicion_Video'].isin(['Entregado', 'Montado'])) , 'Edicion_Video'] = 'No Aplica'
+        edited.loc[(edited['Foto'] == False) & (~edited['Edicion_Foto'].isin(['Entregado', 'Editando'])), 'Edicion_Foto'] = 'No Aplica'
         
         mask_cancel = edited['Estatus'] == 'Cancelada'
         edited.loc[mask_cancel, 'Edicion_Foto'] = 'No Aplica'
@@ -197,9 +202,93 @@ elif menu == "Editar Registros":
         st.rerun()
 
 # ---------------------------------------------------------
-# 3. ESTADÍSTICAS AVANZADAS
+# 3. PENDIENTES
 # ---------------------------------------------------------
-elif menu == "📊 Estadísticas Avanzadas":
+elif menu == "⚡ Pendientes":
+    st.header("⚡ Tablero de Trabajo")
+    st.info("💡 Cambia el estado a 'Entregado' aquí mismo y pulsa 'Guardar Avances'.")
+    
+    df = cargar_y_limpiar()
+    
+    filtro_foto_estado = ~df['Edicion_Foto'].isin(['Entregado', 'No Aplica'])
+    filtro_foto_si = df['Foto'] == True
+    p_foto = df[filtro_foto_estado & filtro_foto_si].copy()
+    
+    filtro_video_estado = ~df['Edicion_Video'].isin(['Entregado', 'No Aplica'])
+    filtro_video_si = df['Video'] == True
+    p_video = df[filtro_video_estado & filtro_video_si].copy()
+    
+    col_p1, col_p2 = st.columns(2)
+    
+    with col_p1:
+        st.subheader(f"📸 Fotos ({len(p_foto)})")
+        if not p_foto.empty:
+            edited_p_foto = st.data_editor(
+                p_foto, key="ed_foto", use_container_width=True, hide_index=True,
+                column_config={
+                    "ID": st.column_config.TextColumn(disabled=True),
+                    "Propiedad": st.column_config.TextColumn(disabled=True),
+                    "Asesora": st.column_config.TextColumn(disabled=True),
+                    "Fecha": st.column_config.TextColumn(disabled=True),
+                    "Edicion_Foto": st.column_config.SelectboxColumn("Estado (Cambiar aquí)", options=["Pendiente", "Editando", "Entregado"]),
+                    "Mes": None, "Año": None, "Tipo": None, "Zona": None, "Link_Maps": None,
+                    "Estatus": None, "Motivo_Cancel": None, "Foto": None, "Video": None, "Drone": None,
+                    "Edicion_Video": None, "Entrega": None, "TikTok": None, "YouTube": None, "Insta": None,
+                    "Comentarios": None, "Condicion": None
+                }
+            )
+        else:
+            edited_p_foto = None
+            st.success("✅ ¡Todo al día en Fotos!")
+
+    with col_p2:
+        st.subheader(f"🎬 Videos ({len(p_video)})")
+        if not p_video.empty:
+            edited_p_video = st.data_editor(
+                p_video, key="ed_video", use_container_width=True, hide_index=True,
+                column_config={
+                    "ID": st.column_config.TextColumn(disabled=True),
+                    "Propiedad": st.column_config.TextColumn(disabled=True),
+                    "Asesora": st.column_config.TextColumn(disabled=True),
+                    "Fecha": st.column_config.TextColumn(disabled=True),
+                    "Edicion_Video": st.column_config.SelectboxColumn("Estado (Cambiar aquí)", options=["Pendiente", "Montado", "Entregado"]),
+                    "Mes": None, "Año": None, "Tipo": None, "Zona": None, "Link_Maps": None,
+                    "Estatus": None, "Motivo_Cancel": None, "Foto": None, "Video": None, "Drone": None,
+                    "Edicion_Foto": None, "Entrega": None, "TikTok": None, "YouTube": None, "Insta": None,
+                    "Comentarios": None, "Condicion": None
+                }
+            )
+        else:
+            edited_p_video = None
+            st.success("✅ ¡Todo al día en Videos!")
+
+    st.markdown("---")
+    
+    if st.button("💾 GUARDAR AVANCES Y LIMPIAR LISTA", type="primary"):
+        cambios = False
+        df_master = cargar_y_limpiar()
+        
+        if edited_p_foto is not None:
+            for index, row in edited_p_foto.iterrows():
+                df_master.loc[df_master['ID'] == row['ID'], 'Edicion_Foto'] = row['Edicion_Foto']
+            cambios = True
+
+        if edited_p_video is not None:
+            for index, row in edited_p_video.iterrows():
+                df_master.loc[df_master['ID'] == row['ID'], 'Edicion_Video'] = row['Edicion_Video']
+            cambios = True
+            
+        if cambios:
+            df_master.to_csv(ARCHIVO_CSV, index=False)
+            st.balloons()
+            st.success("✅ Estados actualizados. Limpiando lista...")
+            time.sleep(1)
+            st.rerun()
+
+# ---------------------------------------------------------
+# 4. ESTADÍSTICAS
+# ---------------------------------------------------------
+elif menu == "📊 Estadísticas":
     df = cargar_y_limpiar()
     
     if df.empty:
@@ -208,7 +297,6 @@ elif menu == "📊 Estadísticas Avanzadas":
         df['Fecha_DT'] = pd.to_datetime(df['Fecha'], errors='coerce')
         df = df.dropna(subset=['Fecha_DT'])
         
-        # --- FILTROS DE TIEMPO ---
         st.markdown("### 🔎 Configuración del Periodo")
         modo_filtro = st.radio("Ver por:", ["Mes", "Año", "Semana (Lun-Vie)", "Rango Personalizado"], horizontal=True)
         
@@ -234,7 +322,6 @@ elif menu == "📊 Estadísticas Avanzadas":
             fecha_ref = st.date_input("Selecciona un día de la semana", datetime.now())
             lunes = fecha_ref - timedelta(days=fecha_ref.weekday())
             viernes = lunes + timedelta(days=4)
-            st.caption(f"Semana: {lunes.strftime('%d/%m')} al {viernes.strftime('%d/%m')}")
             mask = (df['Fecha_DT'] >= pd.to_datetime(lunes)) & (df['Fecha_DT'] <= pd.to_datetime(viernes))
             df_view = df.loc[mask]
             titulo_grafica = f"Semana del {lunes.strftime('%d-%b')}"
@@ -253,17 +340,14 @@ elif menu == "📊 Estadísticas Avanzadas":
         if df_view.empty:
             st.info("Sin registros en este periodo.")
         else:
-            # --- SEPARACIÓN DE DATOS ---
             df_realizadas = df_view[df_view['Estatus'] == 'Realizada']
             df_canceladas = df_view[df_view['Estatus'] == 'Cancelada']
 
-            # 1. MÉTRICAS
             k1, k2, k3, k4 = st.columns(4)
             total_real = len(df_realizadas)
             k1.metric("Sesiones Realizadas", total_real)
             k2.metric("Canceladas", len(df_canceladas))
             
-            # Pendientes Reales
             pendientes = df_realizadas[df_realizadas['Edicion_Foto'].isin(['Pendiente', 'Editando'])]
             k3.metric("Fotos Pendientes", len(pendientes))
             
@@ -272,7 +356,6 @@ elif menu == "📊 Estadísticas Avanzadas":
 
             st.markdown("---")
 
-            # 2. GRÁFICAS
             col_g1, col_g2 = st.columns(2)
             
             with col_g1:
@@ -284,38 +367,44 @@ elif menu == "📊 Estadísticas Avanzadas":
                     st.info("No hay sesiones realizadas.")
             
             with col_g2:
-                st.subheader("📊 Porcentaje de Servicios")
+                st.subheader("📊 Paquetes de Servicios")
                 if total_real > 0:
-                    # Cálculo de porcentajes
-                    pct_foto = (df_realizadas['Foto'].sum() / total_real) * 100
-                    pct_video = (df_realizadas['Video'].sum() / total_real) * 100
-                    pct_drone = (df_realizadas['Drone'].sum() / total_real) * 100
+                    mask_f_true = df_realizadas['Foto'] == True
+                    mask_f_false = df_realizadas['Foto'] == False
+                    mask_v_true = df_realizadas['Video'] == True
+                    mask_v_false = df_realizadas['Video'] == False
+                    mask_d_true = df_realizadas['Drone'] == True
+                    mask_d_false = df_realizadas['Drone'] == False
                     
-                    data_barras = pd.DataFrame({
-                        'Servicio': ['Fotografía', 'Video', 'Drone'],
-                        'Porcentaje': [pct_foto, pct_video, pct_drone]
+                    solo_foto = len(df_realizadas[mask_f_true & mask_v_false & mask_d_false])
+                    foto_video = len(df_realizadas[mask_f_true & mask_v_true & mask_d_false])
+                    foto_video_drone = len(df_realizadas[mask_f_true & mask_v_true & mask_d_true])
+                    solo_video = len(df_realizadas[mask_f_false & mask_v_true & mask_d_false])
+                    
+                    otros = total_real - (solo_foto + foto_video + foto_video_drone + solo_video)
+                    
+                    data_paquetes = pd.DataFrame({
+                        'Paquete': ['Solo Foto', 'Foto + Video', 'Foto + Video + Drone', 'Solo Video', 'Otras Mezclas'],
+                        'Cantidad': [solo_foto, foto_video, foto_video_drone, solo_video, otros]
                     })
                     
-                    # Gráfica de barras con escala fija 0-100%
-                    fig = px.bar(data_barras, x='Servicio', y='Porcentaje',
-                                 title=f"Frecuencia de Servicios (Base: {total_real} Sesiones)",
-                                 text_auto='.1f', # Muestra el número con 1 decimal
-                                 color='Servicio',
-                                 range_y=[0, 100]) # Fija la escala hasta el 100%
+                    data_paquetes = data_paquetes[data_paquetes['Cantidad'] > 0]
+                    
+                    fig = px.bar(data_paquetes, x='Paquete', y='Cantidad',
+                                 title="Combinaciones realizadas (Cantidad exacta)",
+                                 text_auto=True,
+                                 color='Paquete')
+                    
+                    fig.update_layout(showlegend=False)
                     st.plotly_chart(fig, use_container_width=True)
                 else:
-                    st.info("No hay sesiones realizadas para calcular porcentajes.")
+                    st.info("No hay datos suficientes.")
 
-            # 3. CANCELACIONES
             if not df_canceladas.empty:
                 st.markdown("---")
-                st.subheader("🚨 Análisis de Cancelaciones")
+                st.subheader("🚨 Cancelaciones")
                 c_can1, c_can2 = st.columns(2)
-                
                 with c_can1:
-                    st.write("**¿Quién cancela más?**")
                     st.bar_chart(df_canceladas['Asesora'].value_counts(), color="#FF4B4B")
-                
                 with c_can2:
-                    st.write("**Detalle de Cancelaciones:**")
                     st.dataframe(df_canceladas[['Fecha', 'Asesora', 'Propiedad', 'Motivo_Cancel']], hide_index=True)
