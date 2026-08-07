@@ -1,97 +1,148 @@
 ID,Fecha,Mes,Año,Propiedad,Tipo,Zona,Link_Maps,Asesora,Estatus,Motivo_Cancel,Foto,Video,Drone,Edicion_Foto,Edicion_Video,Entrega,TikTok,YouTube,Insta,Comentarios,Condicion
-2601151241.0,2026-01-07,Enero,2026,Casa Fuerte 193,Casa,"Coto Baluarte, Tlajomulco",,Flores,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2601151242.0,2026-01-07,Enero,2026,Desarrollo Monteza,Terreno,Tlajomulco,,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2601151243.0,2026-01-08,Enero,2026,periferico pte y av mariano otero,Casa,Zapopan,,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2601151301.0,2026-01-08,Enero,2026,Desarrollo Navi,Terreno,"Tonalá, Periferico.",,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2601151303.0,2026-01-09,Enero,2026,Cima 200,Depa,"Valle Real, Zapopan.",,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2601151328.0,2026-01-12,Enero,2026,Ruben Dario 965,Local,Lomas de providencia,,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2601151329.0,2026-01-13,Enero,2026,Barlovento,Terreno,"Santa Ana Tepetitlán, Zapopan.",,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2601151330.0,2026-01-15,Enero,2026,Alcalde,Casa,Alcalde,,Yadi,Cancelada,,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
-2601151331.0,2026-01-14,Enero,2026,Avenida valle de México 2644,Casa,Valle Real,,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2601190943.0,2026-01-16,Enero,2026,Coto Althea,Casa,"Coto Althea, Solares.",,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,ese día y no hay foto de fachada.,Buena
-2601201512.0,2026-01-19,Enero,2026,Colonia independencia,Casa,Colonia independencia,,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2601211221.0,2026-01-21,Enero,2026,Edificio Alcalde,Depa,"Alcalde, Guadalajara centro.",,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2601221618.0,2026-01-22,Enero,2026,Valle Imperial,Casa,Valle Imperial,,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2601221619.0,2026-01-22,Enero,2026,San Andres,Casa,San Andres,,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2601261632.0,2026-01-23,Enero,2026,Oficinas Jaime,Local,Zapopan Centro,,Jaime,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2601261633.0,2026-01-26,Enero,2026,Terreno Rio Country Club,Terreno,Terreno Rio Country Club,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2601271750.0,2026-01-27,Enero,2026,Valle de atemajac 2340,Local,Jardines del valle,,Clau M.,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
-2601271751.0,2026-01-27,Enero,2026,Local Hamburguesas,Local,Valle Real,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2601271752.0,2026-01-26,Enero,2026,Casa Tlajomulco,Casa,Casa Tlajomulco,,Rojas,Cancelada,Canceló el cliente,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
-2601281610.0,2026-01-28,Enero,2026,Bodega Av Inglaterra,Local,Av Inglaterra,,Clau M.,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Regular
-2601281611.0,2026-01-28,Enero,2026,Plaza Cibeles,Local,Av. Guadalupe 6340,,Clau M.,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,No había luz en los locales.,Mala
-2601281612.0,2026-01-28,Enero,2026,Depa La Toscana,Depa,La Toscana,,Clau M.,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
-2601281613.0,2026-01-28,Enero,2026,Cañadas,Casa,Cañadas,,Diana,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2602031101.0,2026-01-30,Enero,2026,Acervo,Depa,"Torre acervo, mezquitan.",,Clau E.,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
-2602041700.0,2026-02-03,Febrero,2026,Terraza,Terreno,Tlajomulco,,Sara Rojas,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2602041701.0,2026-02-03,Febrero,2026,Terreno,Terreno,La tijera,,Jaime,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2602041702.0,2026-02-04,Febrero,2026,Casiano torres 7,Casa,La Higuera,,Ale Rosales,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
-2602041703.0,2026-02-04,Febrero,2026,Alva 1141,Casa,Capital Norte,,Ale Rosales,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
-2602041704.0,2026-02-04,Febrero,2026,Valle de las flores,Casa,Las grullas,,Karina,Cancelada,,True,True,True,No Aplica,No Aplica,,False,False,False,,Buena
-2602091749.0,2026-02-09,Febrero,2026,Plaza cibeles,Local,Jardines de Chapalita,,Clau M.,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Regular
-2602091750.0,2026-02-09,Febrero,2026,Sienna 83,Casa,Valle Imperial,,Diana,Cancelada,Cita medica,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
-2602091751.0,2026-02-09,Febrero,2026,Casa - La Rioja,Casa,La Rioja,,Cata,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
-2602091752.0,2026-02-09,Febrero,2026,Terrenos Valle de las Flores,Terreno,Valle de las Flores,,Karina,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2602101308.0,2026-02-10,Febrero,2026,Terreno el Árenal,Terreno,Terreno,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2602131131.0,2026-02-13,Febrero,2026,Casa - Jardin Real,Casa,Jardín Real,,Chio,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2602131132.0,2026-02-13,Febrero,2026,Ponto 32,Casa,Privanza,,Alejandra Landeros,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
-2602171637.0,2026-02-17,Febrero,2026,Ponto sin terminar,Casa,privanza,,Alejandra Landeros,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Mala
-2602171638.0,2026-02-17,Febrero,2026,Bodega,Local,Tlajomulco,,Cata,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2602171639.0,2026-02-17,Febrero,2026,Depa Enity,Casa,Torre 4 Enity,,Alice,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
-2602250950.0,2026-02-25,Febrero,2026,José Bonifacio 3066,Casa,Prados Providencia,,Clau M.,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
-2602250951.0,2026-02-25,Febrero,2026,Locales Plaza Athelier,Local,Providencia,,Alice,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2602251600.0,2026-02-18,Febrero,2026,Jardines del Parque,Casa,Jardines del Parque,,Vane,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
-2602271524.0,2026-02-25,Febrero,2026,Santa Anita,Casa,Santa Anita,,Adri,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2603050916.0,2026-03-05,Marzo,2026,Terreno Sienna,Terreno,Coto Sienna,,Diana,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2603050917.0,2026-03-05,Marzo,2026,Depa Av La Paz,Terreno,Colonia Americana,,Clau M.,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
-2603050919.0,2026-03-05,Marzo,2026,Coto Extremadura 39,Casa,Puerta de Hierro,,Alice,Cancelada,,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
-2603050920.0,2026-03-05,Marzo,2026,Lote 2,Terreno,"Lago Nogal, Santa Anita.",,Clau M.,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2603050926.0,2026-03-02,Marzo,2026,Casa Cajititlan,Casa,Cajititlan,,Gaby,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2603130913.0,2026-03-06,Marzo,2026,Callejón del mirador 4168,Casa,Universidad,,Lore,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
-2603130914.0,2026-03-06,Marzo,2026,"La, Carr. la Venta-Nextipac, 45220 Zapopan, Jal.",Terreno,Nextipac,,Gaby,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2603130923.0,2026-03-13,Marzo,2026,Torre Agave,Depa,Torre Agave,,Yadi,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
-2603231114.0,2026-03-13,Marzo,2026,Coto Universidad,Casa,Coto Universidad,,Lore,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2603231116.0,2026-03-17,Marzo,2026,Fracc. Valle de Santa María,Terreno," San Pedro Tlaquepaque, Jal.",,Gaby,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2603231117.0,2026-03-16,Marzo,2026,Lomas de Polanco,Casa,Lomas de Polanco,,Adri,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2603231118.0,2026-03-17,Marzo,2026,Callejón del mirador 4168,Casa,Callejón del mirador 4168,,Lore,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2603231119.0,2026-03-20,Marzo,2026,Bodega,Local,Isla Raza,,Jaime,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2603231121.0,2026-03-19,Marzo,2026,Vitia La Toscana,Depa,Vitia La Toscana,,Ana,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
-2603271135.0,2026-03-19,Marzo,2026,Desarrollo Arysta,Depa,Desarrollo Arysta,,Ale Rosales,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2603271136.0,2026-03-27,Marzo,2026,Bosquetto,Casa,Bosquetto,,Sara Rojas,Cancelada,,False,True,False,No Aplica,No Aplica,,False,False,False,,Buena
-2603271137.0,2026-03-25,Marzo,2026,Casa / Depas ciudad del sol,Casa,ciudad del sol,,Lidia,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2603271138.0,2026-03-26,Marzo,2026,Depa Forum,Depa,Forum,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2603271139.0,2026-03-26,Marzo,2026,Depa Soneto,Depa,Providencia,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2604011027.0,2026-03-30,Marzo,2026,"Villas de Guadalupe, 45130 Zapopan",Terreno,Tabachines,,Clau E.,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2604011028.0,2026-03-31,Marzo,2026,Terreno Jocotepec,Terreno,Jocotepec,,Karina,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2604011029.0,2026-03-31,Marzo,2026,Desarrollo Jocotepec,Casa,Jocotepec,,Chio,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2604011031.0,2026-03-31,Marzo,2026,El Oro,Casa,Tlajomulco,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2604011032.0,2026-03-31,Marzo,2026,Camino a Las Granjas,Terreno,Tlajomulco,,Ale Rosales,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2604101322.0,2026-04-01,Abril,2026,Av México 3016 jun manuel,Depa,Av México,,Clau M.,Cancelada,,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
-2604101323.0,2026-04-08,Abril,2026,Valle Imperial casa 1,Casa,Valle Imperial,,Ana,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2604101324.0,2026-04-08,Abril,2026,Valle Imperial casa 2,Casa,Valle Imperial,,Ana,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2604101325.0,2026-04-08,Abril,2026,Valle Imperial casa 3,Casa,Valle Imperial,,Ana,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
-2604101326.0,2026-04-08,Abril,2026,Bosqueto,Casa,Bosqueto,,Sara Rojas,Realizada,,False,True,False,No Aplica,Entregado,,False,False,False,,Buena
-2604101327.0,2026-04-09,Abril,2026,Coto Toledo casa 2 fracc Nueva Galicia,Casa,Tlajomulco,,Maru,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
-2604200939.0,2026-04-15,Abril,2026,Julian Carrillo 1974,Casa,Santa Cecilia,,Moni,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2604200940.0,2026-04-15,Abril,2026,Estacionamiento/Funeraria,Casa,Chapala ,,Moni,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2604200940.0,2026-04-15,Abril,2026,Locales,Casa,Chapala ,,Moni,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2604241008.0,2026-04-23,Abril,2026,Casa/Depas,Casa,Ciudad del sol,,Lidia,Realizada,,False,False,True,No Aplica,No Aplica,,False,False,False,,Buena
-2604241010.0,2026-04-23,Abril,2026,Santa Anita Club de Golf,Casa,Santa Anita Club de Golf,,Chio,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2604241012.0,2026-04-23,Abril,2026,Gral. Pedro Rioseco 29,Casa,Guadalajara Centro ,,Gaby,Cancelada,,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
-2605080908.0,2026-04-29,Abril,2026,km21 carr fed gdltepic ,Terreno,santa cruz del asrillero ,,Maru,Realizada,,True,True,True,Entregado,Montado,,False,False,False,,Buena
-2605080910.0,2026-05-04,Mayo,2026,Terreno 19 hermanos,Terreno,Tototlan,,Cesar,Realizada,,True,True,True,Entregado,Montado,,False,False,False,,Buena
-2605080910.0,2026-05-04,Mayo,2026,Ex Cremeria,Terreno,Tototlan,,Cesar,Realizada,,True,True,True,Entregado,Montado,,False,False,False,,Buena
-2605080911.0,2026-05-06,Mayo,2026,Lote121,Terreno,Jardin Real coto 6,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2605080912.0,2026-05-07,Mayo,2026,Terreno Tren,Terreno,Santa Cruz del Astillero,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2605080912.0,2026-05-07,Mayo,2026,Terreno ,Terreno,Santa Cruz del Astillero,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
-2605131151.0,2026-05-08,Mayo,2026,Piso 12,Depa,La toscana,,Cata,Realizada,,True,True,False,Entregado,Montado,,False,False,False,,Buena
-2605131152.0,2026-05-11,Mayo,2026,Minerva,Depa,Minerva,,Ana,Realizada,,True,True,False,Entregado,Montado,,False,False,False,,Buena
-2605131152.0,2026-05-11,Mayo,2026,Ponto,Casa,Adri,,Adri,Realizada,,True,True,True,Entregado,Montado,,False,False,False,,Buena
-2605181515.0,2026-05-15,Mayo,2026,Primer Cuadro,Casa,Tlaquepaque,,Zavala,Realizada,,True,True,False,Entregado,Pendiente,,False,False,False,,Buena
-2605181516.0,2026-05-15,Mayo,2026,Oficinas,Casa,Providencia,,Zavala,Realizada,,True,True,False,Entregado,Pendiente,,False,False,False,,Buena
-2605181516.0,2026-05-15,Mayo,2026,Bosquetto,Terreno,Bosquetto,,Zavala,Realizada,,True,True,True,Entregado,Pendiente,,False,False,False,,Buena
-2605181517.0,2026-05-15,Mayo,2026,Ponto 62 (construcción),Casa,Privanza,,Lidia,Realizada,,True,True,False,Pendiente,Pendiente,,False,False,False,,Buena
-2605181517.0,2026-05-15,Mayo,2026,Terma 109,Casa,Privanza,,Lidia,Realizada,,True,True,False,Pendiente,Pendiente,,False,False,False,,Buena
-2605210939.0,2026-05-19,Mayo,2026,Valle Real,Casa,Valle Real,,Cata,Realizada,,True,True,False,Pendiente,Pendiente,,False,False,False,,Buena
-2605210942.0,2026-05-20,Mayo,2026,Alva 1266,Casa,Alva residencial,,Ale Rosales,Realizada,,True,True,False,Pendiente,Pendiente,,False,False,False,,Buena
-2605210942,2026-05-20,Mayo,2026,Alva 5720,Casa,Alva residencial,,Ale Rosales,Realizada,,True,True,False,Pendiente,Pendiente,,False,False,False,,Buena
+2601151241.0,2026-01-07,Enero,2026.0,Casa Fuerte 193,Casa,"Coto Baluarte, Tlajomulco",,Flores,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2601151242.0,2026-01-07,Enero,2026.0,Desarrollo Monteza,Terreno,Tlajomulco,,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2601151243.0,2026-01-08,Enero,2026.0,periferico pte y av mariano otero,Casa,Zapopan,,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2601151301.0,2026-01-08,Enero,2026.0,Desarrollo Navi,Terreno,"Tonalá, Periferico.",,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2601151328.0,2026-01-12,Enero,2026.0,Ruben Dario 965,Local,Lomas de providencia,,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2601151329.0,2026-01-13,Enero,2026.0,Barlovento,Terreno,"Santa Ana Tepetitlán, Zapopan.",,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2601151330.0,2026-01-15,Enero,2026.0,Alcalde,Casa,Alcalde,,Yadi,Cancelada,,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
+2601151331.0,2026-01-14,Enero,2026.0,Avenida valle de México 2644,Casa,Valle Real,,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2601190943.0,2026-01-16,Enero,2026.0,Coto Althea,Casa,"Coto Althea, Solares.",,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,ese día y no hay foto de fachada.,Buena
+2601201512.0,2026-01-19,Enero,2026.0,Colonia independencia,Casa,Colonia independencia,,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2601211221.0,2026-01-21,Enero,2026.0,Edificio Alcalde,Depa,"Alcalde, Guadalajara centro.",,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2601221618.0,2026-01-22,Enero,2026.0,Valle Imperial,Casa,Valle Imperial,,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2601221619.0,2026-01-22,Enero,2026.0,San Andres,Casa,San Andres,,,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2601261632.0,2026-01-23,Enero,2026.0,Oficinas Jaime,Local,Zapopan Centro,,Jaime,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2601261633.0,2026-01-26,Enero,2026.0,Terreno Rio Country Club,Terreno,Terreno Rio Country Club,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2601271750.0,2026-01-27,Enero,2026.0,Valle de atemajac 2340,Local,Jardines del valle,,Clau M.,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2601271751.0,2026-01-27,Enero,2026.0,Local Hamburguesas,Local,Valle Real,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2601271752.0,2026-01-26,Enero,2026.0,Casa Tlajomulco,Casa,Casa Tlajomulco,,Rojas,Cancelada,Canceló el cliente,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
+2601281610.0,2026-01-28,Enero,2026.0,Bodega Av Inglaterra,Local,Av Inglaterra,,Clau M.,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Regular
+2601281611.0,2026-01-28,Enero,2026.0,Plaza Cibeles,Local,Av. Guadalupe 6340,,Clau M.,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,No había luz en los locales.,Mala
+2601281612.0,2026-01-28,Enero,2026.0,Depa La Toscana,Depa,La Toscana,,Clau M.,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2601281613.0,2026-01-28,Enero,2026.0,Cañadas,Casa,Cañadas,,Diana,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2602031101.0,2026-01-30,Enero,2026.0,Acervo,Depa,"Torre acervo, mezquitan.",,Clau E.,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2602041700.0,2026-02-03,Febrero,2026.0,Terraza,Terreno,Tlajomulco,,Sara Rojas,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2602041701.0,2026-02-03,Febrero,2026.0,Terreno,Terreno,La tijera,,Jaime,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2602041702.0,2026-02-04,Febrero,2026.0,Casiano torres 7,Casa,La Higuera,,Ale Rosales,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2602041703.0,2026-02-04,Febrero,2026.0,Alva 1141,Casa,Capital Norte,,Ale Rosales,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2602041704.0,2026-02-04,Febrero,2026.0,Valle de las flores,Casa,Las grullas,,Karina,Cancelada,,True,True,True,No Aplica,No Aplica,,False,False,False,,Buena
+2602091749.0,2026-02-09,Febrero,2026.0,Plaza cibeles,Local,Jardines de Chapalita,,Clau M.,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Regular
+2602091750.0,2026-02-09,Febrero,2026.0,Sienna 83,Casa,Valle Imperial,,Diana,Cancelada,Cita medica,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
+2602091751.0,2026-02-09,Febrero,2026.0,Casa - La Rioja,Casa,La Rioja,,Cata,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2602091752.0,2026-02-09,Febrero,2026.0,Terrenos Valle de las Flores,Terreno,Valle de las Flores,,Karina,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2602101308.0,2026-02-10,Febrero,2026.0,Terreno el Árenal,Terreno,Terreno,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2602131131.0,2026-02-13,Febrero,2026.0,Casa - Jardin Real,Casa,Jardín Real,,Chio,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2602131132.0,2026-02-13,Febrero,2026.0,Ponto 32,Casa,Privanza,,Alejandra Landeros,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2602171637.0,2026-02-17,Febrero,2026.0,Ponto sin terminar,Casa,privanza,,Alejandra Landeros,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Mala
+2602171638.0,2026-02-17,Febrero,2026.0,Bodega,Local,Tlajomulco,,Cata,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2602171639.0,2026-02-17,Febrero,2026.0,Depa Enity,Casa,Torre 4 Enity,,Alice,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2602250950.0,2026-02-25,Febrero,2026.0,José Bonifacio 3066,Casa,Prados Providencia,,Clau M.,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2602250951.0,2026-02-25,Febrero,2026.0,Locales Plaza Athelier,Local,Providencia,,Alice,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2602251600.0,2026-02-18,Febrero,2026.0,Jardines del Parque,Casa,Jardines del Parque,,Vane,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2602271524.0,2026-02-25,Febrero,2026.0,Santa Anita,Casa,Santa Anita,,Adri,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2603050916.0,2026-03-05,Marzo,2026.0,Terreno Sienna,Terreno,Coto Sienna,,Diana,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2603050917.0,2026-03-05,Marzo,2026.0,Depa Av La Paz,Terreno,Colonia Americana,,Clau M.,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2603050919.0,2026-03-05,Marzo,2026.0,Coto Extremadura 39,Casa,Puerta de Hierro,,Alice,Cancelada,,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
+2603050920.0,2026-03-05,Marzo,2026.0,Lote 2,Terreno,"Lago Nogal, Santa Anita.",,Clau M.,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2603050926.0,2026-03-02,Marzo,2026.0,Casa Cajititlan,Casa,Cajititlan,,Gaby,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2603130913.0,2026-03-06,Marzo,2026.0,Callejón del mirador 4168,Casa,Universidad,,Lore,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2603130914.0,2026-03-06,Marzo,2026.0,"La, Carr. la Venta-Nextipac, 45220 Zapopan, Jal.",Terreno,Nextipac,,Gaby,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2603130923.0,2026-03-13,Marzo,2026.0,Torre Agave,Depa,Torre Agave,,Yadi,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2603231114.0,2026-03-13,Marzo,2026.0,Coto Universidad,Casa,Coto Universidad,,Lore,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2603231116.0,2026-03-17,Marzo,2026.0,Fracc. Valle de Santa María,Terreno," San Pedro Tlaquepaque, Jal.",,Gaby,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2603231117.0,2026-03-16,Marzo,2026.0,Lomas de Polanco,Casa,Lomas de Polanco,,Adri,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2603231118.0,2026-03-17,Marzo,2026.0,Callejón del mirador 4168,Casa,Callejón del mirador 4168,,Lore,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2603231119.0,2026-03-20,Marzo,2026.0,Bodega,Local,Isla Raza,,Jaime,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2603231121.0,2026-03-19,Marzo,2026.0,Vitia La Toscana,Depa,Vitia La Toscana,,Ana,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2603271135.0,2026-03-19,Marzo,2026.0,Desarrollo Arysta,Depa,Desarrollo Arysta,,Ale Rosales,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2603271136.0,2026-03-27,Marzo,2026.0,Bosquetto,Casa,Bosquetto,,Sara Rojas,Cancelada,,False,True,False,No Aplica,No Aplica,,False,False,False,,Buena
+2603271137.0,2026-03-25,Marzo,2026.0,Casa / Depas ciudad del sol,Casa,ciudad del sol,,Lidia,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2603271138.0,2026-03-26,Marzo,2026.0,Depa Forum,Depa,Forum,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2603271139.0,2026-03-26,Marzo,2026.0,Depa Soneto,Depa,Providencia,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2604011027.0,2026-03-30,Marzo,2026.0,"Villas de Guadalupe, 45130 Zapopan",Terreno,Tabachines,,Clau E.,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2604011028.0,2026-03-31,Marzo,2026.0,Terreno Jocotepec,Terreno,Jocotepec,,Karina,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2604011029.0,2026-03-31,Marzo,2026.0,Desarrollo Jocotepec,Casa,Jocotepec,,Chio,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2604011031.0,2026-03-31,Marzo,2026.0,El Oro,Casa,Tlajomulco,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2604011032.0,2026-03-31,Marzo,2026.0,Camino a Las Granjas,Terreno,Tlajomulco,,Ale Rosales,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2604101322.0,2026-04-01,Abril,2026.0,Av México 3016 jun manuel,Depa,Av México,,Clau M.,Cancelada,,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
+2604101323.0,2026-04-08,Abril,2026.0,Valle Imperial casa 1,Casa,Valle Imperial,,Ana,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2604101324.0,2026-04-08,Abril,2026.0,Valle Imperial casa 2,Casa,Valle Imperial,,Ana,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2604101325.0,2026-04-08,Abril,2026.0,Valle Imperial casa 3,Casa,Valle Imperial,,Ana,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2604101326.0,2026-04-08,Abril,2026.0,Bosqueto,Casa,Bosqueto,,Sara Rojas,Realizada,,False,True,False,No Aplica,Entregado,,False,False,False,,Buena
+2604101327.0,2026-04-09,Abril,2026.0,Coto Toledo casa 2 fracc Nueva Galicia,Casa,Tlajomulco,,Maru,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2604200939.0,2026-04-15,Abril,2026.0,Julian Carrillo 1974,Casa,Santa Cecilia,,Moni,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2604200940.0,2026-04-15,Abril,2026.0,Estacionamiento/Funeraria,Casa,Chapala ,,Moni,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2604200940.0,2026-04-15,Abril,2026.0,Locales,Casa,Chapala ,,Moni,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2604241008.0,2026-04-23,Abril,2026.0,Casa/Depas,Casa,Ciudad del sol,,Lidia,Realizada,,False,False,True,No Aplica,No Aplica,,False,False,False,,Buena
+2604241010.0,2026-04-23,Abril,2026.0,Santa Anita Club de Golf,Casa,Santa Anita Club de Golf,,Chio,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2604241012.0,2026-04-23,Abril,2026.0,Gral. Pedro Rioseco 29,Casa,Guadalajara Centro ,,Gaby,Cancelada,,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
+2605080908.0,2026-04-29,Abril,2026.0,km21 carr fed gdltepic ,Terreno,santa cruz del asrillero ,,Maru,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2605080910.0,2026-05-04,Mayo,2026.0,Terreno 19 hermanos,Terreno,Tototlan,,Cesar,Realizada,,True,True,True,Entregado,Montado,,False,False,False,,Buena
+2605080910.0,2026-05-04,Mayo,2026.0,Ex Cremeria,Terreno,Tototlan,,Cesar,Realizada,,True,True,True,Entregado,Montado,,False,False,False,,Buena
+2605080911.0,2026-05-06,Mayo,2026.0,Lote121,Terreno,Jardin Real coto 6,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2605080912.0,2026-05-07,Mayo,2026.0,Terreno Tren,Terreno,Santa Cruz del Astillero,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2605080912.0,2026-05-07,Mayo,2026.0,Terreno ,Terreno,Santa Cruz del Astillero,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2605131151.0,2026-05-08,Mayo,2026.0,Piso 12,Depa,La toscana,,Cata,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2605131152.0,2026-05-11,Mayo,2026.0,Minerva,Depa,Minerva,,Ana,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2605131152.0,2026-05-11,Mayo,2026.0,Ponto,Casa,Adri,,Adri,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2605181515.0,2026-05-15,Mayo,2026.0,Primer Cuadro,Casa,Tlaquepaque,,Zavala,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2605181516.0,2026-05-15,Mayo,2026.0,Oficinas,Casa,Providencia,,Zavala,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2605181516.0,2026-05-15,Mayo,2026.0,Bosquetto,Terreno,Bosquetto,,Zavala,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2605181517.0,2026-05-15,Mayo,2026.0,Ponto 62 (construcción),Casa,Privanza,,Lidia,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2605181517.0,2026-05-15,Mayo,2026.0,Terma 109,Casa,Privanza,,Lidia,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2605210939.0,2026-05-19,Mayo,2026.0,Valle Real,Casa,Valle Real,,Cata,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2605210942.0,2026-05-20,Mayo,2026.0,Alva 1266,Casa,Alva residencial,,Ale Rosales,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2605210942.0,2026-05-20,Mayo,2026.0,Alva 5720,Casa,Alva residencial,,Ale Rosales,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2605251151.0,2026-05-25,Mayo,2026.0,Pedregal del Bosque,Casa,Pedregal del Bosque,,Adri,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2606050920.0,2026-06-05,Junio,2026.0,ponto 65,Casa,Privanza,,Lidia,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2606050921.0,2026-06-05,Junio,2026.0,Olivos,Casa,Solares,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2606050922.0,2026-06-05,Junio,2026.0,Heriberto M. Aja 885,Casa,Solares,,Cata,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2606161603.0,2026-06-08,Junio,2026.0,Casa Campanario,Casa,Campanario,,Adri,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2606161603.0,2026-06-08,Junio,2026.0,Casa El Salto,Casa,El Salto,,Yadi,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2606161604.0,2026-06-09,Junio,2026.0,Bodega Terreno,Terreno,El Campanario,,Jaime,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2606161605.0,2026-06-09,Junio,2026.0,Casa de campo,Casa,Monteciello,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2606161605.0,2026-06-09,Junio,2026.0,Casa,Casa,Valle Imperial,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2606161607.0,2026-06-09,Junio,2026.0,Depa Cosmocrat 1,Casa,Cosmocrat ,,Cata,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2606161607.0,2026-06-09,Junio,2026.0,Depa Cosmocrat 2,Casa,Cosmocrat ,,Cata,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2606161608.0,2026-06-12,Junio,2026.0,Terreno Cañadas,Terreno,Cañadas,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2606161609.0,2026-06-16,Junio,2026.0,Casa Olivos,Terreno,Olivos,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2606161609.0,2026-06-16,Junio,2026.0,Terreno Acatlan,Terreno,Terreno Acatlan,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2606241314.0,2026-06-15,Junio,2026.0,Casa El Salto,Casa,Casa El Salto,,Yadi,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2606241316.0,,,,,,,,,,,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
+2606241318.0,2026-06-22,Junio,2026.0,Edificio Circunvalación,Local,Edificio Circunvalación,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2606241319.0,2026-06-23,Junio,2026.0,Casa 16 ,Casa,Jardines del Valle,,Cata,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2606241320.0,2026-06-15,Junio,2026.0,Santillana,Casa,Santillana,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2606241321.0,2026-06-22,Junio,2026.0,Villa Corona,Terreno,Villa Corona,,Clau E,Realizada,,True,False,True,Entregado,No Aplica,,False,False,False,,Buena
+2606241323.0,2026-06-24,Junio,2026.0,Valeira,Casa,Valeira,,Cata,Realizada,,True,False,True,Entregado,No Aplica,,False,False,False,,Buena
+2606241324.0,2026-06-15,Junio,2026.0,Villa California 1,Casa,Villa California 1,,Yadi,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2606241324.0,2026-06-15,Junio,2026.0,Villa California 2,Casa,Villa California 1,,Yadi,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2606241324.0,2026-06-15,Junio,2026.0,Flor de loto,Casa,Flor de loto,,Cata,Realizada,,True,False,False,Entregado,Entregado,,False,False,False,,Buena
+2606301143.0,2026-06-29,Junio,2026.0,Yu piso 23,Depa,Yu piso 23,,Lidia,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2606301143.0,2026-06-29,Junio,2026.0,Yu piso 23,Depa,Yu piso 2 (1),,Lidia,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2606301143.0,2026-06-29,Junio,2026.0,Yu piso 23,Depa,Yu piso 2 (2),,Lidia,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2606301143.0,2026-06-29,Junio,2026.0,Terreno Privanza,Depa,Yu piso 2 (2),,Vane,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2606301145.0,2026-06-26,Junio,2026.0,Casa aeropuerto,Casa,Casa aeropuerto,,Cata,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2607071046.0,2026-06-22,Julio,2026.0,Villa Corona,Terreno,Estrada,,Clau E,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2607071726.0,2026-07-06,Julio,2026.0,Cumbres,Terreno,Cumbres,,Ale Rosales,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2607071726.0,2026-07-06,Julio,2026.0,Casa Tesistan,Casa,Tesistan,,Clau E,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2607071727.0,2026-07-06,Julio,2026.0,Heriberto M. Aja,Casa,5 de Mayo,,Cata,Realizada,,True,True,False,Entregado,Montado,,False,False,False,,Buena
+2607071730.0,2026-07-04,Julio,2026.0,Juan Álvarez 1504,Casa,Santa Teresita,,Clau M.,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2607071730.0,2026-07-04,Julio,2026.0,Cañadas,Casa,Cañadas,,Diana,Realizada,,False,True,False,No Aplica,Entregado,,False,False,False,,Buena
+2607081653.0,2026-07-03,Julio,2026.0,Bodegas tonala,Casa,,,Zavala,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2607081654.0,2026-07-08,Julio,2026.0,Depa Ciudad Granja,Depa,Ciudad Granja,,Diana,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2607201024.0,2026-07-20,Julio,2026.0,Terrenos Tapalpa,Terreno,Terrenos Tapalpa,,Lidia,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2607280910.0,2026-07-22,Julio,2026.0,Ixtlahuacan,Terreno,Ixtlahuacan,,Yadi,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2607280911.0,2026-07-22,Julio,2026.0,Arcos de Zapopan,Depa,Arcos de Zapopan,,Ale Rosales,Realizada,,True,True,False,Entregado,Entregado,,False,False,False,,Buena
+2607280912.0,2026-07-23,Julio,2026.0,La herradura,Casa,La herradura,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2607280914.0,2026-07-23,Julio,2026.0,Torre Ferrara,Depa,Torre Ferrara,,Cata,Realizada,,True,True,True,Entregado,Entregado,,False,False,False,,Buena
+2607310926.0,2026-07-29,Julio,2026.0,Av paseo del alva 981,Casa,Alva,,Ale Rosales,Cancelada,,False,False,False,Pendiente,Montado,,False,False,False,,Buena
+2607310926.0,2026-07-29,Julio,2026.0,Av paseo del alva 981,Depa,Puerta del Tule,,Betty,Realizada,,True,True,True,Pendiente,Montado,,False,False,False,,Buena
+2607310927.0,2026-07-29,Julio,2026.0,Ponto 62,Casa,Ponto 62,,Lidia,Realizada,,True,True,True,Entregado,Pendiente,,False,False,False,,Buena
+2607310928.0,2026-07-29,Julio,2026.0,Terrenos ,Terreno,Condomio Cantares,,Lidia,Realizada,,True,True,True,Entregado,Pendiente,,False,False,False,,Buena
+2607310929.0,2026-07-29,Julio,2026.0,Locales las Terrazas,Terreno,las Terrazas,,Lidia,Realizada,,True,False,False,Entregado,No Aplica,,False,False,False,,Buena
+2608070914.0,2026-08-07,Agosto,2026.0,Alba,Casa,Alba,,Ale Rosales,Realizada,,True,True,False,Pendiente,Pendiente,,False,False,False,,Buena
+2608070915.0,2026-08-07,Agosto,2026.0,Sotavento ,Casa,Sotavento ,,Clau M.,Cancelada,,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
+2608070915.0,2026-08-05,Agosto,2026.0, jardines del valle,Casa,Sotavento ,,Clau M.,Cancelada,,False,False,False,No Aplica,No Aplica,,False,False,False,,Buena
+2608070916.0,2026-08-06,Agosto,2026.0,Colonia americana,Local,Colonia americana,,Maru,Cancelada,,True,True,True,No Aplica,No Aplica,,False,False,False,,Buena
+2608070916,2026-08-06,Agosto,2026.0,Capomo 68 tlajomulco,Casa,Capomo 68 tlajomulco,,Clau M.,Cancelada,,True,False,False,No Aplica,No Aplica,,False,False,False,,Buena
